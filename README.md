@@ -13,7 +13,7 @@ $ git-mover.py [-h] [--destinationToken [DESTINATIONTOKEN]]
                     [--destinationUserName [DESTINATIONUSERNAME]]
                     [--sourceRoot [SOURCEROOT]]
                     [--destinationRoot [DESTINATIONROOT]] [--milestones]
-                    [--labels] [--issues]
+                    [--labels] [--replace_labels] [--issues] 
                     user_name token source_repo destination_repo
 ```
 
@@ -42,5 +42,7 @@ For authentication, GitMover uses a personal access token, which can be generate
   `--milestones, -m`: Toggle on Milestone migration.
   
   `--labels, -l`: Toggle on Label migration.
+  
+  `--replace_labels, -rl`: Toggle on replacing Labels of destination_repo with labels source_repo. Good if you don't want GitHub default labels.
   
   `--issues, -i`: Toggle on Issue migration.
